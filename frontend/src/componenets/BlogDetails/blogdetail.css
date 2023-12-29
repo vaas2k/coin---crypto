@@ -1,0 +1,29 @@
+.contain-blog-comment h1{
+    color:#ff6600;
+}
+
+.blog-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+}
+
+.contain-up-del{
+    display: flex;
+    right: 10px;
+}
+.up-del{
+    width: 100px;
+    margin: 10px;
+}
+
+
+.comm-area{
+    width: 400px;
+    height: 150px;
+}
+.comm{
+    width: 100px;
+}

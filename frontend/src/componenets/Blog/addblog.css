@@ -1,0 +1,260 @@
+/* addblog.css */
+
+.contain-add-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .add-blog {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-blog label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .add-blog textarea,
+  .add-blog input[type="text"],
+  .add-blog input[type="file"],
+  .add-blog button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .add-blog textarea {
+    height: 120px;
+  }
+  
+  .add-blog button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-blog button:hover {
+    background-color: #45a049;
+  }
+  
+
+  /* addblog.css */
+
+/* ... (previous styles) */
+
+.contain-add-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .add-blog {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-blog label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .add-blog textarea,
+  .add-blog input[type="text"],
+  .add-blog input[type="file"],
+  .add-blog button {
+    width: calc(100% - 22px);
+    padding: 12px 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  .add-blog textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .add-blog input[type="file"],
+  .add-blog button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-blog input[type="file"]:hover,
+  .add-blog button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-blog button:active {
+    transform: translateY(1px);
+  }
+  
+  .add-blog input[type="file"]::file-selector-button {
+    display: none;
+  }
+  
+  .add-blog button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .add-blog label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .add-blog textarea,
+  .add-blog input[type="text"],
+  .add-blog input[type="file"],
+  .add-blog button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .add-blog textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .add-blog input[type="text"],
+  .add-blog textarea {
+    /* Enhance focus styles */
+    outline: none;
+  }
+  
+  .add-blog input[type="text"]:focus,
+  .add-blog textarea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+  }
+  
+  /* Improve label positioning for textarea */
+  .add-blog div {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .add-blog label {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    padding: 0 5px;
+    font-size: 14px;
+    transition: top 0.3s, font-size 0.3s, left 0.3s;
+  }
+  
+  .add-blog textarea:focus ~ label,
+  .add-blog input[type="text"]:focus ~ label {
+    top: -22px;
+    font-size: 12px;
+    left: 5px;
+    padding: 0 3px;
+    color: #4caf50;
+  }
+
+  .add-blog label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .add-blog textarea,
+  .add-blog input[type="text"],
+  .add-blog input[type="file"],
+  .add-blog button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .add-blog textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .add-blog input[type="text"],
+  .add-blog textarea {
+    /* Enhance focus styles */
+    outline: none;
+  }
+  
+  .add-blog input[type="text"]:focus,
+  .add-blog textarea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+  }
+  
+  /* Align labels to the left */
+  .add-blog label {
+    display: block;
+  }
+  
+  .add-blog div {
+    position: relative;
+  }
+  
+  .add-blog label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 0 5px;
+    font-size: 14px;
+    transition: font-size 0.3s, color 0.3s, padding 0.3s;
+  }
+  
+  .add-blog input[type="text"]:focus ~ label,
+  .add-blog textarea:focus ~ label {
+    font-size: 12px;
+    color: #4caf50;
+    padding: 0 3px;
+  }
+
+
+  .add-blog label {
+    padding: 0%;
+    position: relative;
+    padding-top: 10px;
+    font-size: 15px;
+  }

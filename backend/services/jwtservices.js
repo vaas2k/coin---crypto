@@ -1,46 +1,38 @@
-const jwt = require('jsonwebtoken')
-const TOKEN = require('../modules/token');
 
-const Access_secret = 'bcb4fb3144ed5db0c6b165e492b76a4ca2b2b0ce0c6c00640b3309fe1fb5f9b884663f70b607ce07f35ad02cbca56d7424607b1c4886fc680c2a145c1ca69b97'
-const Refresh_secret = 'f7be7b159614273713d20cf8ec8080c1c12745169cfc7ce8a71f53a7a3fa40917e5584c369239628833d0e875840a468a5066bebc2397e795e3de04759ac0f07'
+const jwt = require('jsonwebtoken');
+const Token = require('../models/token')
+
+const Access_secret = '68dc0f0ab0bcf57982c2f73f13d9c1b0fafebcd62fa0766cb2cdfb2e3be5b82f2e22a28b0baf6ebcf5981f62baa9518f8f0dfa3bb339264567f3e253a910b1c0'
+const Refresh_secret = '9b5d48b226cc5e0a9d46ed5fd779af62043f74a5d391ff3dc796d2f243221d1e78105301fd75e345672ed46eb6f4bde633f23ce4b5c656271d9da56e0d216447'
 
 
-class JWTService {
+class JWTService{
 
-    // sign token will only be used at registration time
-    //sign access token
+    // sign access token 
     static signAccessToken(payload,expiryTime){
         return jwt.sign(payload,Access_secret,{expiresIn : expiryTime});
     }
-    //sign refresh token
+    // sign refresh token
     static signRefreshToken(payload,expiryTime){
         return jwt.sign(payload,Refresh_secret,{expiresIn : expiryTime});
     }
-
-    // verification is done when a user is trying to login with its token
-    //verify access
+    // verify access token 
     static verifyAccessToken(token){
-        return jwt.verify(token, Access_secret);
+        return jwt.verify(token,Access_secret);
     }
-    // verify refresh
+    // verify refresh token
     static verifyRefreshToken(token){
         return jwt.verify(token,Refresh_secret);
     }
-
-    // save token in Database 
-    static async saveToken(token,user){
-        try{
-        const newToken = new TOKEN ( {
+    // save refresh token
+    static async saveRefreshToken(token,user){
+        const newtoken = new Token({
             token : token,
-            id : user.id
+            id : user._id
         })
-        await newToken.save();
-       }
-       catch(error){
-        console.log(error);
-    }
         
+        await newtoken.save();
     }
 }
 
-module.exports = JWTService ;
+module.exports = JWTService;

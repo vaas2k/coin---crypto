@@ -1,23 +1,22 @@
 {
-  "name": "backend",
+  "name": "trybackend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "cloudinary": "^1.41.0",
     "cookie-parser": "^1.4.6",
-    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.6.3",
+    "mongoose": "^8.0.1",
     "nodemon": "^3.0.1",
-    "prompt-sync": "^4.2.0"
+    "uuid": "^9.0.1"
   }
 }

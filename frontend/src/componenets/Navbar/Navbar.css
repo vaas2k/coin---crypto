@@ -1,0 +1,63 @@
+*{
+    font-family: 'Rubik', 'sans-serif' ;
+    padding: 4px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding-top: -10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h3{
+    font-size: 20px;
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 100px;
+    cursor: pointer;
+
+}
+
+
+.navbar h3:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: background-color 0.3s ease-in-out ; /* Smooth transition */
+    
+}
+
+
+.navbar ol{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .navbar ol {
+        flex-direction: column;
+        gap: 10px;
+        }
+}
+
+.to-sign , .to-log , .to-signout{
+    border-radius: 10px;
+    background-color: rgb(40, 40, 41);
+    width: max-content;
+    transition: background-color 0.3s ease-out;
+}
+
+.to-sign:hover , .to-log:hover ,.to-signout{
+    background-color: #ff6600;
+}
+
+.to-signout:hover{
+    background-color: rgb(40, 40, 41);
+    transition: background-color 0.3s ease-out;
+}
+
